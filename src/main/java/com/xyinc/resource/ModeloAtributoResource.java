@@ -1,12 +1,12 @@
-package com.xyinc.model.resource;
+package com.xyinc.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.xyinc.model.ModeloAtributo;
-import com.xyinc.model.service.CrudService;
-import com.xyinc.model.service.ModeloAtributoService;
+import com.xyinc.service.CrudService;
+import com.xyinc.service.ModeloAtributoService;
 
 @RestController
 @RequestMapping("/modeloAtributos")

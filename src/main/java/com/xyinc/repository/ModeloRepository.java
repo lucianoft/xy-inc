@@ -1,4 +1,4 @@
-package com.xyinc.model.repository;
+package com.xyinc.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

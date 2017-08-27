@@ -1,4 +1,4 @@
-package com.xyinc.model.resource;
+package com.xyinc.resource;
 
 import java.io.Serializable;
 import java.util.List;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.xyinc.model.service.CrudService;
+import com.xyinc.service.CrudService;
 
 public abstract class CrudResource<T, ID extends Serializable> {
 

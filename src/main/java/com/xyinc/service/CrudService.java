@@ -1,4 +1,4 @@
-package com.xyinc.model.service;
+package com.xyinc.service;
 
 import java.io.Serializable;
 import java.util.List;
