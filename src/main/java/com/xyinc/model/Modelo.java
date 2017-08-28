@@ -65,4 +65,8 @@ public class Modelo implements Serializable {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Modelo [id=" + id + ", nome=" + nome + "]";
+	}
 }
