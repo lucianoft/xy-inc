@@ -28,8 +28,8 @@ public class ModeloTest extends AbstractCrudTest{
     @Test
     public void test2CriarModulo() throws JsonProcessingException {
 
-        Modelo modelo = new Modelo();
-        modelo.setNome("Teste");
+       Modelo modelo = new Modelo();
+       modelo.setNome("Teste");
 
        Modelo response = postEntity(BASE_URL_MODELO, modelo, Modelo.class);
        assertNotNull(response);

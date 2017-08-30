@@ -15,6 +15,9 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+
 @Table(name = "modelo_atributo")
 @Entity
 public class ModeloAtributo implements Serializable {
@@ -39,6 +42,7 @@ public class ModeloAtributo implements Serializable {
 
 	@NotNull
 	@ManyToOne
+	@JsonManagedReference
 	@JoinColumn(name = "id_modelo")
 	private Modelo modelo;
 
