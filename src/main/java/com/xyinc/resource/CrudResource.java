@@ -47,8 +47,8 @@ public abstract class CrudResource<T, ID extends Serializable> {
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<T> editar(@PathVariable ID id, @Valid @RequestBody T model) {
-		T t = getCrudService().editar(id, model);
-		return ResponseEntity.ok(t);
+		T modelSalvo = getCrudService().editar(id, model);
+		return ResponseEntity.ok(modelSalvo);
 	}
 	
 	@DeleteMapping("/{id}")

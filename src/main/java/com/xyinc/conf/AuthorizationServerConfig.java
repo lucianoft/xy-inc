@@ -16,14 +16,17 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
+	private static final String CLIENT_ID = "xy_inc";
+	private static final String SECRET = "@xy_inc@";
+	
 	@Autowired
 	private AuthenticationManager authenticationManager;
 	
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory()
-			.withClient("xy_inc")
-			.secret("@xy_inc@")
+			.withClient(CLIENT_ID)
+			.secret(SECRET)
 			.scopes("read", "write")
 			.authorizedGrantTypes("password")
 			.accessTokenValiditySeconds(1800);

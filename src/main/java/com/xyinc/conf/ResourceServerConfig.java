@@ -15,10 +15,13 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
+	private final String USUARIO = "admin";
+	private final String SENHA = "admin";
+	
 	@Autowired
 	public void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
-			.withUser("admin").password("admin").roles("ROLE");
+			.withUser(USUARIO).password(SENHA).roles("ROLE");
 	}
 	
 	@Override
