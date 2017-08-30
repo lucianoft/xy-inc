@@ -1,7 +1,7 @@
 # xy-inc
 
 Sistema foi construindo com a ideia de criar classes "genericas" onde facilitaria bastante o Trabalho para aplicações CRUD.
-O banco de dados que optei para aplicação foi o Mysql.
+<br>O banco de dados que optei para aplicação foi o Mysql.
 
 ## Segurança
 A parte de segurança optei por utilizar OAuth2, por enquanto usuario e senha não foram persistidos mas futuramente poderão e deverao ser migrados para banco de dados
@@ -11,4 +11,4 @@ Pensando na Evolução do Sistema e alterações em Banco de Dados optei por uti
 
 ## Testes
 Utilizando Maven
-mv clean package
+<br>mv clean package
